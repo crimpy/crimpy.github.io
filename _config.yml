@@ -1,0 +1,21 @@
+# Site settings
+title: Coding: the endless journey
+header-img: img/home-bg.png
+email: briannactitone@gmail.com
+copyright_name: crimpy
+description: > # this means to ignore newlines until "baseurl:"
+  about me and my projects
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  crimpy
+learn_profile: crimpy
+email_username: briannactitone@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
