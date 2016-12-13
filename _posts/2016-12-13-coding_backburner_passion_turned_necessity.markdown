@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Coding: Backburner passion turned necessity"
-date:   2016-12-13 16:06:31 +0000
+date:   2016-12-13 11:06:31 -0500
 ---
 
 
