@@ -101,10 +101,12 @@ To get the parts to stick, I use this css:
 }
 ```
 
+
 But the css isn't enough to make it work, we need a some JQuery. Here's the code and an explaination:
 
-$(window).scroll(function() {  //triggers when the page is scrolled
 
+```
+$(window).scroll(function() {  //triggers when the page is scrolled
     var amount = $('#tempHead').length!=0 ? 167 : 67;  //See explanation below
     if ($(this).scrollTop() >= amount) {
         $('.main-nav').addClass('stickytop');  //add class to the menu div to make it stick
@@ -125,6 +127,7 @@ $(window).scroll(function() {  //triggers when the page is scrolled
         }
     }
 });
+```
 
 The main table of the page has the id 'tempHead'. Since the page header is used for all pages and not all pages have the main software table in it, I don't want the same action to happen on all pages, just the one where the main table is. This is why there are the if statements looking for ``` if($('#tempHead').length!=0 )``` which would be true if the id is present. 
 So the first var assignment sets the scroll amount to 167px if the table exists and only 67 on other pages. 
