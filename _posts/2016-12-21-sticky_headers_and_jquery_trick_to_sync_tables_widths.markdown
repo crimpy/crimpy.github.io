@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Sticky headers and JQuery trick to sync tables widths"
-date:   2016-12-21 21:48:09 +0000
+date:   2016-12-21 16:48:10 -0500
 ---
 
 
-I was working on a website that has a large table of software data in it that, when long enough, requires one to scroll to see the table contents. What i wanted to do was make a "sticky" header that docked to the top of the page that duplicated the header in the main table. 
+I was working on a website that has a large table of software data in it that, when long enough, requires one to scroll to see the table contents. What I wanted to do was make a "sticky" header that docked to the top of the page that duplicated the header in the main table. 
 
 The web page is built using PHP so there are several components that are involved. One is the page header which draws out the logo and menu buttons. Part of this header is also sticky so when I scroll, both the menu bar and the table header dock at the top. 
 
@@ -55,7 +55,9 @@ To accomplish this, I duplicated the table header of the main table in the heade
 </div>
 ```
 
+
 To get the parts to stick, I use this css:
+
 
 ```
 .main-nav {
