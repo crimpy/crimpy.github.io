@@ -32,9 +32,11 @@ Here is the main sticky menu bar which contains a shopping cart button which I w
           </ul>
       </div>
     </div>
-		```
-		
+```
+	
+	
 To accomplish this, I duplicated the table header of the main table in the header PHP document and set the header to display none. The containing div is called 'tempDiv' and uses a class of 'main-nav2'.  Note the added col# classes which will be used later. (the bld clas is just to make the text bold face). 
+
 
 ```
 <div id="tempDiv" class="main-nav2" style="display:none;">
