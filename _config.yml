@@ -1,11 +1,11 @@
 # Site settings
-title: Coding: the endless journey
+title: Coding- the endless journey
 header-img: img/home-bg.png
 email: briannactitone@gmail.com
 copyright_name: crimpy
 description: > # this means to ignore newlines until "baseurl:"
   about me and my projects
-baseurl: "briannatitone.com" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  crimpy
 learn_profile: crimpy
