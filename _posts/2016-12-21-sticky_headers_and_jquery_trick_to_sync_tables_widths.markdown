@@ -144,6 +144,7 @@ Here's the code:
 ```
 //matches the floating header widths to match the table below
 function initialHeadAdjust(){
+    if($('#tempHead th.bld.col1')[0]==undefined){return;}  //only do these things if the header exists
     for(var i=1; i<9; i++) {  //I could use a for each here but I have a set number of cells
             var newWidth = $('#tempHead th.bld.col'+i)[0].clientWidth;  //get the width of the header in the main table
             $('#tempTable th.bld.col'+i).eq(0).css('width', (newWidth) + "px");  //apply the width to the cloned header
@@ -152,7 +153,8 @@ function initialHeadAdjust(){
 
 //now every time the windw is resized and the table cells change, the two will sync and line up
 $(window).on('resize', function(){  
-    for(var i=1; i<9; i++) {
+    if($('#tempHead th.bld.col1')[0]==undefined){return;} //only do these things if the header exists
+		for(var i=1; i<9; i++) {
             var newWidth = $('#tempHead th.bld.col'+i)[0].clientWidth;
             $('#tempTable th.bld.col'+i).eq(0).css('width', (newWidth) + "px");
         }
